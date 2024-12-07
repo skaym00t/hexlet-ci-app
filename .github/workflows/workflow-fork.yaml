@@ -1,7 +1,9 @@
-name: tests
+name: workflow-fork
 on: push
 jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
       - run: make setup
+      - run: make test
+      - run: make lint
