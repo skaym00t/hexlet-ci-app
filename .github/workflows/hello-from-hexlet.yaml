@@ -1,0 +1,11 @@
+name: workflow-fork
+on: push
+jobs:
+  print:
+    steps:
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v4
+
+      - name: Print Hello from Hexlet
+        uses: hexlet-components/hello-from-hexlet-action@release
