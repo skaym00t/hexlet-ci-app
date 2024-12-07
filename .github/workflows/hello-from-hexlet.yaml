@@ -2,6 +2,7 @@ name: workflow-fork
 on: push
 jobs:
   print:
+  runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         id: checkout
